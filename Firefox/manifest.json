@@ -1,0 +1,12 @@
+{
+	"manifest_version": 2,
+
+	"name": "No Summary For You!",
+	"description": "Hide summaries for movies and TV-series on Netflix.",
+	"version": "1.0",
+
+	"content_scripts": [{
+		"matches": ["https://netflix.com/*", "https://*.netflix.com/*"],
+		"css": ["Styles/netflix.css"]
+	}]
+}
