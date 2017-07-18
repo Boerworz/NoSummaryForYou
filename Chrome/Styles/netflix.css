@@ -1,0 +1,49 @@
+/* =========== Hiding summaries =========== */
+
+/* Idle pause menu */
+.playback-longpause-container > .content > p:not(#yw-label),
+/* Episode list in the player */
+.episode-list-synopsis,
+/* The large, featured content at the top of the start page */
+.billboard .synopsis,
+/* Synopses in the cards in Browse, when hovering over them */
+.bob-card .synopsis,
+/* Synopses in the expanded, full-width content in Browse (after clicking a card) */
+.jawbone-overview-info .synopsis,
+/* Synopses for episode list in Browse */
+.episodeSynopsis,
+/* Synopses for the "More Like This" list in Browse */
+.simsSynopsis,
+/* Synopsis for the next episode after an episode has completed */
+.player-postplay-episode-synopsis
+{
+	transition: 1s filter linear;
+	filter: blur(8px);
+}
+
+/* =========== Hover states =========== */
+/* These are the same selectors as above, but with the `:hover` selector
+ * appended. 
+ */
+
+/* Idle pause menu */
+.playback-longpause-container > .content > p:not(#yw-label):hover,
+/* Episode list in the player */
+.episode-list-synopsis:hover,
+/* The large, featured content at the top of the start page */
+.billboard .synopsis:hover,
+/* Synopses in the expanded, full-width content in Browse (after clicking a card) */
+.jawbone-overview-info .synopsis:hover,
+/* Synopses for episode list in Browse */
+.episodeSynopsis:hover,
+/* Synopses for the "More Like This" list in Browse */
+.simsSynopsis:hover,
+/* Synopsis for the next episode after an episode has completed */
+.player-postplay-episode-synopsis:hover
+{
+	/* Using `none` causes the unfiltered text to appear for a brief moment at
+	 * the start of the transition, before actually transitioning. Using a blur
+	 * of 0px instead doesn't have the same problem.
+	 */
+	filter: blur(0px);
+}
