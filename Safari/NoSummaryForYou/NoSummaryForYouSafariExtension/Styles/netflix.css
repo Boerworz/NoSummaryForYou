@@ -47,3 +47,11 @@
 	 */
 	filter: blur(0px);
 }
+
+/* This class is added/removed to all blurred elements when the toolbar button
+ * is clicked. This allows the user to effectively turn the extension on and
+ * off in a quick way.
+ */
+.noblur {
+	filter: none !important;
+}

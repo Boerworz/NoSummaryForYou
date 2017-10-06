@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		935EC9C61F880AEA0056AE2D /* netflix.js in Resources */ = {isa = PBXBuildFile; fileRef = 935EC9C51F880AE50056AE2D /* netflix.js */; };
 		93BF3CA61EEDB27C00E04322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BF3CA51EEDB27C00E04322 /* AppDelegate.swift */; };
 		93BF3CA81EEDB27C00E04322 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BF3CA71EEDB27C00E04322 /* ViewController.swift */; };
 		93BF3CAA1EEDB27C00E04322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93BF3CA91EEDB27C00E04322 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		935EC9C51F880AE50056AE2D /* netflix.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = netflix.js; sourceTree = "<group>"; };
 		93BF3CA21EEDB27C00E04322 /* NoSummaryForYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoSummaryForYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BF3CA51EEDB27C00E04322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93BF3CA71EEDB27C00E04322 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		935EC9C11F88040D0056AE2D /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				935EC9C51F880AE50056AE2D /* netflix.js */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		93BF3C991EEDB27C00E04322 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +137,7 @@
 				93BF3CC11EEDB2E200E04322 /* SafariExtensionViewController.swift */,
 				93BF3CC31EEDB2E200E04322 /* SafariExtensionViewController.xib */,
 				93BF3CC61EEDB2E200E04322 /* Info.plist */,
+				935EC9C11F88040D0056AE2D /* Scripts */,
 				93BF3CD41EEDCB0C00E04322 /* Styles */,
 				93BF3CC91EEDB2E200E04322 /* ToolbarItemIcon.pdf */,
 				93BF3CBD1EEDB2E200E04322 /* Supporting Files */,
@@ -246,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935EC9C61F880AEA0056AE2D /* netflix.js in Resources */,
 				93BF3CD61EEDCB0C00E04322 /* netflix.css in Resources */,
 				93BF3CCA1EEDB2E200E04322 /* ToolbarItemIcon.pdf in Resources */,
 				93BF3CC51EEDB2E200E04322 /* SafariExtensionViewController.xib in Resources */,
