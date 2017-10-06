@@ -11,11 +11,26 @@ import SafariServices
 class SafariExtensionHandler: SFSafariExtensionHandler {
     
     override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : Any]?) {
-        // This method will be called when a content script provided by your extension calls safari.extension.dispatchMessage("message").
-        page.getPropertiesWithCompletionHandler { properties in
-            NSLog("The extension received a message (\(messageName)) from a script injected into (\(String(describing: properties?.url))) with userInfo (\(userInfo ?? [:]))")
-        }
+        NSLog("The extension received a message (\(messageName)) with userInfo (\(userInfo ?? [:])) from a script")
+
+		switch messageName {
+		case "stateChanged": handleStateChangeMessage(with: userInfo!)
+		default: fatalError("Unrecognized message \"\(messageName)\" from script")
+		}
     }
+
+	private func handleStateChangeMessage(with userInfo: [String: Any]) {
+		let isBlurEnabled = userInfo["blurEnabled"] as! Bool
+		setToolbarItemBadgeText(to: isBlurEnabled ? nil : "OFF")
+	}
+
+	private func setToolbarItemBadgeText(to badgeText: String?) {
+		SFSafariApplication.getActiveWindow {
+			$0?.getToolbarItem { toolbarItem in
+				toolbarItem?.setBadgeText(badgeText)
+			}
+		}
+	}
     
     override func toolbarItemClicked(in window: SFSafariWindow) {
         NSLog("The extension's toolbar item was clicked")

@@ -42,14 +42,20 @@ function toggleElementBlur() {
 		noBlurStyleNode = document.createElement("style");
 		noBlurStyleNode.innerHTML = selectors.join(", ") + "{ filter: none !important; }";
 	}
-	toggleNode(noBlurStyleNode);
+
+	// Tell the App Extension that the state changed so that it can update the
+	// toolbar item.
+	var blurEnabled = !toggleNode(noBlurStyleNode);
+	safari.extension.dispatchMessage("stateChanged", {"blurEnabled": blurEnabled});
 }
 
 function toggleNode(node) {
 	if (node.parentNode) {
 		node.parentNode.removeChild(node);
+		return false;
 	} else {
 		document.body.appendChild(node);
+		return true;
 	}
 }
 
