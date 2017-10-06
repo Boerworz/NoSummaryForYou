@@ -202,11 +202,13 @@
 					93BF3CA11EEDB27C00E04322 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 666L949UND;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					93BF3CB71EEDB2E200E04322 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 666L949UND;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -406,7 +408,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = se.cocoabeans.NoSummaryForYou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -423,7 +426,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = se.cocoabeans.NoSummaryForYou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -439,7 +443,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -455,7 +460,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
