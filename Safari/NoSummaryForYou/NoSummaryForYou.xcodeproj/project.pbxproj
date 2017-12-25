@@ -16,9 +16,10 @@
 		93BF3CC01EEDB2E200E04322 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BF3CBF1EEDB2E200E04322 /* SafariExtensionHandler.swift */; };
 		93BF3CC21EEDB2E200E04322 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BF3CC11EEDB2E200E04322 /* SafariExtensionViewController.swift */; };
 		93BF3CC51EEDB2E200E04322 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93BF3CC31EEDB2E200E04322 /* SafariExtensionViewController.xib */; };
-		93BF3CCA1EEDB2E200E04322 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 93BF3CC91EEDB2E200E04322 /* ToolbarItemIcon.pdf */; };
 		93BF3CCD1EEDB2E200E04322 /* NoSummaryForYouSafariExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 93BF3CB81EEDB2E200E04322 /* NoSummaryForYouSafariExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		93BF3CD61EEDCB0C00E04322 /* netflix.css in Resources */ = {isa = PBXBuildFile; fileRef = 93BF3CD51EEDCB0C00E04322 /* netflix.css */; };
+		93C217751FF1424B00AEAA21 /* ToolbarItemIconDisabled.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 93C217731FF140D500AEAA21 /* ToolbarItemIconDisabled.pdf */; };
+		93C217761FF1424B00AEAA21 /* ToolbarItemIconEnabled.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 93C217741FF140DD00AEAA21 /* ToolbarItemIconEnabled.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +61,9 @@
 		93BF3CC11EEDB2E200E04322 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
 		93BF3CC41EEDB2E200E04322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		93BF3CC61EEDB2E200E04322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93BF3CC91EEDB2E200E04322 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		93BF3CD51EEDCB0C00E04322 /* netflix.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = netflix.css; sourceTree = "<group>"; };
+		93C217731FF140D500AEAA21 /* ToolbarItemIconDisabled.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIconDisabled.pdf; sourceTree = "<group>"; };
+		93C217741FF140DD00AEAA21 /* ToolbarItemIconEnabled.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIconEnabled.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +141,8 @@
 				93BF3CC61EEDB2E200E04322 /* Info.plist */,
 				935EC9C11F88040D0056AE2D /* Scripts */,
 				93BF3CD41EEDCB0C00E04322 /* Styles */,
-				93BF3CC91EEDB2E200E04322 /* ToolbarItemIcon.pdf */,
+				93C217731FF140D500AEAA21 /* ToolbarItemIconDisabled.pdf */,
+				93C217741FF140DD00AEAA21 /* ToolbarItemIconEnabled.pdf */,
 				93BF3CBD1EEDB2E200E04322 /* Supporting Files */,
 			);
 			path = NoSummaryForYouSafariExtension;
@@ -257,9 +260,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93C217751FF1424B00AEAA21 /* ToolbarItemIconDisabled.pdf in Resources */,
+				93C217761FF1424B00AEAA21 /* ToolbarItemIconEnabled.pdf in Resources */,
 				935EC9C61F880AEA0056AE2D /* netflix.js in Resources */,
 				93BF3CD61EEDCB0C00E04322 /* netflix.css in Resources */,
-				93BF3CCA1EEDB2E200E04322 /* ToolbarItemIcon.pdf in Resources */,
 				93BF3CC51EEDB2E200E04322 /* SafariExtensionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

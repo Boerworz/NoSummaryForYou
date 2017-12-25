@@ -21,14 +21,16 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 
 	private func handleStateChangeMessage(with userInfo: [String: Any]) {
 		let isBlurEnabled = userInfo["blurEnabled"] as! Bool
-		setToolbarItemBadgeText(to: isBlurEnabled ? nil : "OFF")
+		setToolbarItemImage(to: NSImage(named: isBlurEnabled ? .toolbarItemIconEnabled : .toolbarItemIconDisabled)!)
 	}
 
-	private func setToolbarItemBadgeText(to badgeText: String?) {
-		SFSafariApplication.getActiveWindow {
-			$0?.getToolbarItem { toolbarItem in
-				toolbarItem?.setBadgeText(badgeText)
-			}
+	private func setToolbarItemImage(to newToolbarItemImage: NSImage) {
+		logDebugMessage("setToolbarItemImage(to:) called")
+		SFSafariApplication.getActiveWindow { (window) in
+			window?.getToolbarItem(completionHandler: { (toolbarItem) in
+				self.logDebugMessage("Calling SFSafariToolbarItem.setImage(_:) with \(newToolbarItemImage)")
+				toolbarItem?.setImage(newToolbarItemImage)
+			})
 		}
 	}
     
@@ -59,4 +61,9 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
         return SafariExtensionViewController.shared
     }
 
+}
+
+private extension NSImage.Name {
+	static let toolbarItemIconEnabled = NSImage.Name(rawValue: "ToolbarItemIconEnabled.pdf")
+	static let toolbarItemIconDisabled = NSImage.Name(rawValue: "ToolbarItemIconDisabled.pdf")
 }
