@@ -43,11 +43,7 @@ function toggleElementBlur() {
 		noBlurStyleNode.innerHTML = selectors.join(", ") + "{ filter: none !important; }";
 	}
 
-	// Tell the App Extension that the state changed so that it can update the
-	// toolbar item.
 	var blurEnabled = !toggleNode(noBlurStyleNode);
-	safari.extension.dispatchMessage("stateChanged", {"blurEnabled": blurEnabled});
-
 	if (blurEnabled) {
 		displayNotification("Summaries hidden");
 	} else {

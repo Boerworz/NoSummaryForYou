@@ -10,30 +10,6 @@ import SafariServices
 
 class SafariExtensionHandler: SFSafariExtensionHandler {
     
-    override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : Any]?) {
-        NSLog("The extension received a message (\(messageName)) with userInfo (\(userInfo ?? [:])) from a script")
-
-		switch messageName {
-		case "stateChanged": handleStateChangeMessage(with: userInfo!)
-		default: fatalError("Unrecognized message \"\(messageName)\" from script")
-		}
-    }
-
-	private func handleStateChangeMessage(with userInfo: [String: Any]) {
-		let isBlurEnabled = userInfo["blurEnabled"] as! Bool
-		setToolbarItemImage(to: NSImage(named: isBlurEnabled ? .toolbarItemIconEnabled : .toolbarItemIconDisabled)!)
-	}
-
-	private func setToolbarItemImage(to newToolbarItemImage: NSImage) {
-		logDebugMessage("setToolbarItemImage(to:) called")
-		SFSafariApplication.getActiveWindow { (window) in
-			window?.getToolbarItem(completionHandler: { (toolbarItem) in
-				self.logDebugMessage("Calling SFSafariToolbarItem.setImage(_:) with \(newToolbarItemImage)")
-				toolbarItem?.setImage(newToolbarItemImage)
-			})
-		}
-	}
-    
     override func toolbarItemClicked(in window: SFSafariWindow) {
         NSLog("The extension's toolbar item was clicked")
 		window.getActiveTab {
@@ -61,9 +37,5 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
         return SafariExtensionViewController.shared
     }
 
-}
 
-private extension NSImage.Name {
-	static let toolbarItemIconEnabled = NSImage.Name(rawValue: "ToolbarItemIconEnabled.pdf")
-	static let toolbarItemIconDisabled = NSImage.Name(rawValue: "ToolbarItemIconDisabled.pdf")
 }
