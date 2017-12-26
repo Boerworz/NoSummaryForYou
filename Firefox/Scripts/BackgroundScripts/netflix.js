@@ -20,13 +20,6 @@ browser.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 });
 
 browser.pageAction.onClicked.addListener(function(tab) {
-	browser.tabs.sendMessage(tab.id, {"name": "toolbarItemClicked"}, function(response) {
-		// TODO: Change the icon instead of the tooltip title
-		if (response.isBlurEnabled) {
-			browser.pageAction.setTitle({"title": "Enabled", "tabId": tab.id});
-		} else {
-			browser.pageAction.setTitle({"title": "Disabled", "tabId": tab.id});
-		}
-	});
+	browser.tabs.sendMessage(tab.id, {"name": "toolbarItemClicked"});
 });
 

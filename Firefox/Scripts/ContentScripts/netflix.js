@@ -8,8 +8,7 @@
 
 browser.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 	if (request.name == "toolbarItemClicked") {
-		var blurEnabled = toggleElementBlur();
-		sendResponse({"isBlurEnabled": blurEnabled});
+		toggleElementBlur();
 	}
 });
 
