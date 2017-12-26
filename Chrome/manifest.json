@@ -19,6 +19,7 @@
 	},
 
 	"page_action": {
-		"default_title": "No Summary For You!"
+		"default_title": "No Summary For You!",
+		"default_icon": "toolbar-icon-38.png"
 	}
 }
