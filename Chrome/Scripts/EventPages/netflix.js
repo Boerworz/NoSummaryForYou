@@ -26,13 +26,6 @@ chrome.runtime.onInstalled.addListener(function() {
 });
 
 chrome.pageAction.onClicked.addListener(function(tab) {
-	chrome.tabs.sendMessage(tab.id, {"name": "toolbarItemClicked"}, function(response) {
-		// TODO: Change the icon instead of the tooltip title
-		if (response.isBlurEnabled) {
-			chrome.pageAction.setTitle({"title": "Enabled", "tabId": tab.id});
-		} else {
-			chrome.pageAction.setTitle({"title": "Disabled", "tabId": tab.id});
-		}
-	});
+	chrome.tabs.sendMessage(tab.id, {"name": "toolbarItemClicked"});
 });
 
