@@ -42,6 +42,15 @@
 					<string>http://*.netflix.com/*</string>
 				</array>
 			</dict>
+			<dict>
+				<key>Style Sheet</key>
+				<string>extension.css</string>
+				<key>Allowed URL Patterns</key>
+				<array>
+					<string>https://*.netflix.com/*</string>
+					<string>http://*.netflix.com/*</string>
+				</array>
+			</dict>
 		</array>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.Safari.extension</string>

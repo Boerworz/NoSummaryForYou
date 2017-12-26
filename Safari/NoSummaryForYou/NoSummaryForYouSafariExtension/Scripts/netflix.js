@@ -47,6 +47,12 @@ function toggleElementBlur() {
 	// toolbar item.
 	var blurEnabled = !toggleNode(noBlurStyleNode);
 	safari.extension.dispatchMessage("stateChanged", {"blurEnabled": blurEnabled});
+
+	if (blurEnabled) {
+		displayNotification("Summaries hidden");
+	} else {
+		displayNotification("Summaries revealed");
+	}
 }
 
 function toggleNode(node) {
@@ -57,5 +63,28 @@ function toggleNode(node) {
 		document.body.appendChild(node);
 		return true;
 	}
+}
+
+var notificationNode = null;
+var notificationTimeoutID = null;
+
+function displayNotification(message) {
+	if (notificationNode == null) {
+		notificationNode = document.createElement("div");
+		notificationNode.className = "nosummaryforyou-extension-notification";
+	}
+	notificationNode.innerText = message;
+
+	if (notificationNode.parentNode == null) {
+		document.body.appendChild(notificationNode);
+	}
+
+	if (notificationTimeoutID) {
+		window.clearTimeout(notificationTimeoutID);
+	}
+
+	notificationTimeoutID = window.setTimeout(function() {
+		notificationNode.parentNode.removeChild(notificationNode);
+	}, 3000);
 }
 
