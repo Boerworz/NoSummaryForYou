@@ -14,7 +14,7 @@ browser.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 var selectors = [
 	/* Idle pause menu */
-	".playback-longpause-container > .content > p:not(#yw-label)",
+	".PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type",
 	/* Episode list in the player */
 	".episode-list-synopsis",
 	/* The large, featured content at the top of the start page */
