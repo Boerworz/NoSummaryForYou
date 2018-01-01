@@ -16,7 +16,7 @@ var selectors = [
 	/* Idle pause menu */
 	".PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type",
 	/* Episode list in the player */
-	".episode-list-synopsis",
+	".episode-list .synopsis",
 	/* The large, featured content at the top of the start page */
 	".billboard .synopsis",
 	/* Synopses in the cards in Browse, when hovering over them */

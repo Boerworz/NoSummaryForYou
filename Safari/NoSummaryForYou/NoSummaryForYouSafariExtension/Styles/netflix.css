@@ -3,7 +3,7 @@
 /* Idle pause menu */
 .PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type,
 /* Episode list in the player */
-.episode-list-synopsis,
+.episode-list .synopsis,
 /* The large, featured content at the top of the start page */
 .billboard .synopsis,
 /* Synopses in the cards in Browse, when hovering over them */
@@ -29,7 +29,7 @@
 /* Idle pause menu */
 .PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type:hover,
 /* Episode list in the player */
-.episode-list-synopsis:hover,
+.episode-list .synopsis:hover,
 /* The large, featured content at the top of the start page */
 .billboard .synopsis:hover,
 /* Synopses in the expanded, full-width content in Browse (after clicking a card) */
