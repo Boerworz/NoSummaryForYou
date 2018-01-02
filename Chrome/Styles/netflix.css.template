@@ -1,0 +1,21 @@
+/* =========== Hiding summaries =========== */
+
+{{netflix-css-selectors}}
+{
+	transition: 500ms filter linear;
+	filter: blur(8px);
+}
+
+/* =========== Hover states =========== */
+/* These are the same selectors as above, but with the `:hover` selector
+ * appended. 
+ */
+
+{{netflix-css-hover-selectors}}
+{
+	/* Using `none` causes the unfiltered text to appear for a brief moment at
+	 * the start of the transition, before actually transitioning. Using a blur
+	 * of 0px instead doesn't have the same problem.
+	 */
+	filter: blur(0px);
+}

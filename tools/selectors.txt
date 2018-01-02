@@ -1,0 +1,31 @@
+// selectors.txt
+//
+// This file contains a list of CSS selectors that the browser extensions should blur
+// on Netflix.
+// If you edit this file, make sure you run tools/process_templates.sh to propagate the
+// selectors to all the CSS files and JavaScript files in the extensions.
+
+
+// Idle pause menu
+.PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type
+
+// Episode list in the player
+.episode-list .synopsis
+
+// The large, featured content at the top of the start page
+.billboard .synopsis
+
+// Synopses in the cards in Browse, when hovering over them
+.bob-card .synopsis
+
+// Synopses in the expanded, full-width content in Browse (after clicking a card)
+.jawbone-overview-info .synopsis
+
+// Synopses for episode list in Browse
+.episodeSynopsis
+
+// Synopses for the "More Like This" list in Browse
+.simsSynopsis
+
+// Synopsis for the next episode after an episode has completed
+.player-postplay-episode-synopsis
