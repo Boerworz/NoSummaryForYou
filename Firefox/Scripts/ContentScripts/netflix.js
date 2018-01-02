@@ -23,15 +23,7 @@ browser.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 });
 
 var selectors = [
-	".PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type",
-".episode-list .synopsis",
-".next-episode .synopsis",
-".billboard .synopsis",
-".bob-card .synopsis",
-".jawbone-overview-info .synopsis",
-".episodeSynopsis",
-".simsSynopsis",
-".player-postplay-episode-synopsis"
+	".PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type", ".episode-list .synopsis", ".next-episode .synopsis", ".billboard .synopsis", ".bob-card .synopsis", ".jawbone-overview-info .synopsis", ".episodeSynopsis", ".simsSynopsis", ".player-postplay-episode-synopsis"
 ];
 
 var noBlurStyleNode = null;

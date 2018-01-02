@@ -75,13 +75,13 @@ def parse_selectors(selectors_file):
     return selectors
 
 def create_netflix_css_selectors(selectors):
-    return ",\n".join(selectors)
+    return ", ".join(selectors)
 
 def create_netflix_hover_css_selectors(selectors):
-    return ",\n".join([selector + ":hover" for selector in selectors])
+    return ", ".join([selector + ":hover" for selector in selectors])
 
 def create_netflix_javascript_selectors(selectors):
-    return ",\n".join(['"{}"'.format(selector) for selector in selectors])
+    return ", ".join(['"{}"'.format(selector) for selector in selectors])
 
 def replace_template_variables(input_text, available_template_variables):
     return re.sub(r'\{\{([a-z\-]+)\}\}', lambda match: available_template_variables[match.group(1)], input_text)
