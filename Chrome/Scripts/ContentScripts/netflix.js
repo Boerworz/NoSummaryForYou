@@ -22,10 +22,6 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 	}
 });
 
-var selectors = [
-	".PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type", ".episode-list .synopsis", ".next-episode .synopsis", ".billboard .synopsis", ".bob-card .synopsis", ".jawbone-overview-info .synopsis", ".episodeSynopsis", ".simsSynopsis", ".player-postplay-episode-synopsis"
-];
-
 var noBlurStyleNode = null;
 
 function toggleElementBlur() {
@@ -38,7 +34,7 @@ function toggleElementBlur() {
 	// selector (even if we use `!important`). 
 	if (noBlurStyleNode == null) {
 		noBlurStyleNode = document.createElement("style");
-		noBlurStyleNode.innerHTML = selectors.join(", ") + "{ filter: none !important; }";
+		noBlurStyleNode.innerHTML = ".PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type, .episode-list .synopsis, .next-episode .synopsis, .billboard .synopsis, .bob-card .synopsis, .jawbone-overview-info .synopsis, .episodeSynopsis, .simsSynopsis, .player-postplay-episode-synopsis { filter: none !important; }";
 	}
 
 	var blurEnabled = !toggleNode(noBlurStyleNode);

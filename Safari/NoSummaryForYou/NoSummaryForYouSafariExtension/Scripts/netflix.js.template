@@ -9,10 +9,6 @@ function handleMessage(event) {
 	}
 }
 
-var selectors = [
-	{{netflix-javascript-selectors}}
-];
-
 var noBlurStyleNode = null;
 
 function toggleElementBlur() {
@@ -25,7 +21,7 @@ function toggleElementBlur() {
 	// selector (even if we use `!important`). 
 	if (noBlurStyleNode == null) {
 		noBlurStyleNode = document.createElement("style");
-		noBlurStyleNode.innerHTML = selectors.join(", ") + "{ filter: none !important; }";
+		noBlurStyleNode.innerHTML = "{{netflix-css-selectors}} { filter: none !important; }";
 	}
 
 	var blurEnabled = !toggleNode(noBlurStyleNode);

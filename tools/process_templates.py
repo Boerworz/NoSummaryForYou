@@ -80,9 +80,6 @@ def create_netflix_css_selectors(selectors):
 def create_netflix_hover_css_selectors(selectors):
     return ", ".join([selector + ":hover" for selector in selectors])
 
-def create_netflix_javascript_selectors(selectors):
-    return ", ".join(['"{}"'.format(selector) for selector in selectors])
-
 def replace_template_variables(input_text, available_template_variables):
     return re.sub(r'\{\{([a-z\-]+)\}\}', lambda match: available_template_variables[match.group(1)], input_text)
 
@@ -103,7 +100,6 @@ def main(input_filenames):
     available_template_variables = {
         "netflix-css-selectors": create_netflix_css_selectors(selectors),
         "netflix-css-hover-selectors": create_netflix_hover_css_selectors(selectors),
-        "netflix-javascript-selectors": create_netflix_javascript_selectors(selectors),
     }
 
     for source_filename in input_filenames:
