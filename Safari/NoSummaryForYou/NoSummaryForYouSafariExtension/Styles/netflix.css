@@ -12,6 +12,7 @@
 
 .PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type,
 .episode-list .synopsis,
+.next-episode .synopsis,
 .billboard .synopsis,
 .bob-card .synopsis,
 .jawbone-overview-info .synopsis,
@@ -30,6 +31,7 @@
 
 .PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type:hover,
 .episode-list .synopsis:hover,
+.next-episode .synopsis:hover,
 .billboard .synopsis:hover,
 .bob-card .synopsis:hover,
 .jawbone-overview-info .synopsis:hover,

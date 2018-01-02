@@ -12,6 +12,9 @@
 // Episode list in the player
 .episode-list .synopsis
 
+// Synopsis for the next episode in the player
+.next-episode .synopsis
+
 // The large, featured content at the top of the start page
 .billboard .synopsis
 

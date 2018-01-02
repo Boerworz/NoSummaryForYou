@@ -22,6 +22,7 @@ function handleMessage(event) {
 var selectors = [
 	".PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type",
 ".episode-list .synopsis",
+".next-episode .synopsis",
 ".billboard .synopsis",
 ".bob-card .synopsis",
 ".jawbone-overview-info .synopsis",
