@@ -10,7 +10,7 @@
 
 /* =========== Hiding summaries =========== */
 
-.PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type, .episode-list .synopsis, .next-episode .synopsis, .billboard .synopsis, .bob-card .synopsis, .jawbone-overview-info .synopsis, .episodeSynopsis, .simsSynopsis, .player-postplay-episode-synopsis
+.PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type, .episode-list .synopsis, .next-episode .synopsis, .billboard .synopsis, .bob-card .synopsis, .jawbone-overview-info .synopsis, .episodeSynopsis, .simsSynopsis, .WatchNext-episode-synopsis
 {
 	transition: 500ms filter linear;
 	filter: blur(8px);
@@ -21,7 +21,7 @@
  * appended. 
  */
 
-.PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type:hover, .episode-list .synopsis:hover, .next-episode .synopsis:hover, .billboard .synopsis:hover, .bob-card .synopsis:hover, .jawbone-overview-info .synopsis:hover, .episodeSynopsis:hover, .simsSynopsis:hover, .player-postplay-episode-synopsis:hover
+.PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type:hover, .episode-list .synopsis:hover, .next-episode .synopsis:hover, .billboard .synopsis:hover, .bob-card .synopsis:hover, .jawbone-overview-info .synopsis:hover, .episodeSynopsis:hover, .simsSynopsis:hover, .WatchNext-episode-synopsis:hover
 {
 	/* Using `none` causes the unfiltered text to appear for a brief moment at
 	 * the start of the transition, before actually transitioning. Using a blur

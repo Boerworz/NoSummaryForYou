@@ -31,4 +31,4 @@
 .simsSynopsis
 
 // Synopsis for the next episode after an episode has completed
-.player-postplay-episode-synopsis
+.WatchNext-episode-synopsis
