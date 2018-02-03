@@ -32,3 +32,6 @@
 
 // Synopsis for the next episode after an episode has completed
 .WatchNext-episode-synopsis
+
+// Synopsis for promoted videos that appear after a movie or series has completed
+.PromotedVideo-synopsis

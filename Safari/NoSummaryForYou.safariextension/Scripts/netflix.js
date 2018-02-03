@@ -29,7 +29,7 @@ function toggleElementBlur() {
 	// selector (even if we use `!important`). 
 	if (noBlurStyleNode == null) {
 		noBlurStyleNode = document.createElement("style");
-		noBlurStyleNode.innerHTML = ".PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type, .episode-list .synopsis, .next-episode .synopsis, .billboard .synopsis, .bob-card .synopsis, .jawbone-overview-info .synopsis, .episodeSynopsis, .simsSynopsis, .WatchNext-episode-synopsis { filter: none !important; }";
+		noBlurStyleNode.innerHTML = ".PlayerControls--container > div:not(.controls-full-hit-zone):not(.PlayerControls--main-controls) > .evidence-overlay > p:first-of-type, .episode-list .synopsis, .next-episode .synopsis, .billboard .synopsis, .bob-card .synopsis, .jawbone-overview-info .synopsis, .episodeSynopsis, .simsSynopsis, .WatchNext-episode-synopsis, .PromotedVideo-synopsis { filter: none !important; }";
 	}
 
 	var blurEnabled = !toggleNode(noBlurStyleNode);
