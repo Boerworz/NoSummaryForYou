@@ -2,7 +2,9 @@
 	"manifest_version": 2,
 
 	"name": "No Summary For You!",
-	"description": "Hide summaries for movies and TV-series on Netflix.",
+	"description": "Hides summaries for movies and TV shows on Netflix.",
+	"homepage_url": "https://nosummaryforyou.com",
+	"author": "Tim Andersson",
 	"version": "1.0",
 	"icons": {
 		"16": "Icon-16.png",

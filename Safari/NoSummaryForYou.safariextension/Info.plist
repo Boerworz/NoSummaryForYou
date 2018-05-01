@@ -7,7 +7,7 @@
 	<key>Builder Version</key>
 	<string>13605.1.33.1.2</string>
 	<key>CFBundleDisplayName</key>
-	<string>NoSummaryForYou</string>
+	<string>No Summary For You!</string>
 	<key>CFBundleIdentifier</key>
 	<string>se.cocoabeans.safari.nosummaryforyou</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -51,6 +51,8 @@
 			<string>Styles/netflix.css</string>
 		</array>
 	</dict>
+	<key>Description</key>
+	<string>Hides summaries for movies and TV shows on Netflix.</string>
 	<key>DeveloperIdentifier</key>
 	<string>666L949UND</string>
 	<key>ExtensionInfoDictionaryVersion</key>
@@ -69,5 +71,7 @@
 			<string>Some</string>
 		</dict>
 	</dict>
+	<key>Website</key>
+	<string>https://nosummaryforyou.com</string>
 </dict>
 </plist>
