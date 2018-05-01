@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Tim Andersson</string>
 	<key>Builder Version</key>
-	<string>12604.1.38.1.7</string>
+	<string>13605.1.33.1.2</string>
 	<key>CFBundleDisplayName</key>
 	<string>NoSummaryForYou</string>
 	<key>CFBundleIdentifier</key>
@@ -28,7 +28,7 @@
 				<key>Identifier</key>
 				<string>toggle</string>
 				<key>Image</key>
-				<string>Icon.png</string>
+				<string>toolbar.png</string>
 				<key>Include By Default</key>
 				<true/>
 				<key>Label</key>

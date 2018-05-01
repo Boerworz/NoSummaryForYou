@@ -4,6 +4,11 @@
 	"name": "No Summary For You!",
 	"description": "Hide summaries for movies and TV-series on Netflix.",
 	"version": "1.0",
+	"icons": {
+		"16": "Icon-16.png",
+		"48": "Icon-48.png",
+		"128": "Icon-128.png"
+	},
 
 	"permissions": ["tabs"],
 
@@ -19,7 +24,7 @@
 
 	"page_action": {
 		"default_icon": {
-			"38": "toolbar-icon-38.png"
+			"38": "toolbar.svg"
 		},
 		"default_title": "No Summary For You!"
 	}
