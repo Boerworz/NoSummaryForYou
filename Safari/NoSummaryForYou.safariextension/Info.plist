@@ -71,6 +71,8 @@
 			<string>Some</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>https://nosummaryforyou.com/safari_extension_update_manifest.plist</string>
 	<key>Website</key>
 	<string>https://nosummaryforyou.com</string>
 </dict>
