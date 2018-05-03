@@ -75,5 +75,7 @@
 	<string>https://nosummaryforyou.com/safari_extension_update_manifest.plist</string>
 	<key>Website</key>
 	<string>https://nosummaryforyou.com</string>
+	<key>Update From Gallery</key>
+	<true/>
 </dict>
 </plist>
