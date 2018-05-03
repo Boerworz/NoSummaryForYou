@@ -1,7 +1,7 @@
 // TODO: Use real URLs.
 const SAFARI_EXT_DOWNLOAD_URL = "#safari";
-const FIREFOX_EXT_DOWNLOAD_URL = "#firefox";
-const CHROME_EXT_DOWNLOAD_URL = "#chrome";
+const FIREFOX_EXT_DOWNLOAD_URL = "https://addons.mozilla.org/addon/nosummaryforyou/";
+const CHROME_EXT_DOWNLOAD_URL = "https://chrome.google.com/webstore/detail/ecafhklokcgimpkepemaphcdcoilmffe";
 
 function configureSecondaryLinkElements(defs) {
 	var secondaryDownloadLinks = document
