@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Tim Andersson</string>
 	<key>Builder Version</key>
-	<string>13605.1.33.1.2</string>
+	<string>14606.3.4</string>
 	<key>CFBundleDisplayName</key>
 	<string>No Summary For You!</string>
 	<key>CFBundleIdentifier</key>
@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.1</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -71,11 +71,11 @@
 			<string>Some</string>
 		</dict>
 	</dict>
+	<key>Update From Gallery</key>
+	<true/>
 	<key>Update Manifest URL</key>
 	<string>https://nosummaryforyou.com/safari_extension_update_manifest.plist</string>
 	<key>Website</key>
 	<string>https://nosummaryforyou.com</string>
-	<key>Update From Gallery</key>
-	<true/>
 </dict>
 </plist>
